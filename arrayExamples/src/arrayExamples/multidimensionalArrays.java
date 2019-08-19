@@ -16,13 +16,14 @@ public class multidimensionalArrays {
 						};
 	
 		//Each row is a 1D array so obtaining the length is:
-		int arrayLength = data[0].length; //Without [index] the length would be 3
+		//int arrayLength = data[0].length; //Without [index] the length would be 3
 		processingTwoDimensional(data);
 	}
 	
 	//Method to show how to use scanner for user inputs in a multidimensional array.
 	public static void inputToMultiArray() {
 		int [][] data = new int[3][3];
+		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter 9 numbers followed by spaces");
 		for(int i = 0; i < data.length; i++) {
