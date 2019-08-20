@@ -27,35 +27,35 @@ public class animal {
 	}
 	
 	//Getter and Setters
-	public void setSpecies(String input) {
+	protected void setSpecies(String input) {
 		species = input;
 	}
 	
-	public String getSpecies() {
+	protected String getSpecies() {
 		return species;
 	}
 	
-	public void setColor(String input) {
+	protected void setColor(String input) {
 		color = input;
 	}
 	
-	public String getColor() {
+	protected String getColor() {
 		return color;
 	}
 	
-	public void setLegs(int input) {
+	protected void setLegs(int input) {
 		legs = input;
 	}
 	
-	public int getLegs() {
+	protected int getLegs() {
 		return legs;
 	}
 	
-	public void setSize(String input) {
+	protected void setSize(String input) {
 		size = input;
 	}
 	
-	public String getSize() {
+	protected String getSize() {
 		return size;
 	}
 	
