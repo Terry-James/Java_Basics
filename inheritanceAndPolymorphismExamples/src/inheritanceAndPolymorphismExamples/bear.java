@@ -27,6 +27,9 @@ public class bear extends animal implements Edible{
 	}
 	
 	//Getters and Setters for this class
+	/*Important: Only provide a getter if you want the data to be seen and 
+	 *setter only if you want the data to be changeable.
+	*/
 	public String getAge() {
 		return age;
 	}

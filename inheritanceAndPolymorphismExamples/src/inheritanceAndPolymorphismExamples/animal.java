@@ -25,6 +25,9 @@ public abstract class animal {
 	}
 	
 	//Getter and Setters
+	/*Important: Only provide a getter if you want the data to be seen and 
+	 *setter only if you want the data to be changeable.
+	*/
 	protected void setColor(String input) {
 		color = input;
 	}
