@@ -9,32 +9,22 @@ package inheritanceAndPolymorphismExamples;
  */
 
 // Class for animals
-public class animal {
-	private String species;
+public abstract class animal {
 	private String color;
 	private int legs;
 	private String size;
 	
 	//Constructors
-	animal(){
+	protected animal(){
 	}
 	
-	animal(String newSpecies, String newColor, int newLegs, String newSize){
-		species = newSpecies;
+	protected animal(String newColor, int newLegs, String newSize){
 		color = newColor;
 		legs = newLegs;
 		size = newSize;
 	}
 	
 	//Getter and Setters
-	protected void setSpecies(String input) {
-		species = input;
-	}
-	
-	protected String getSpecies() {
-		return species;
-	}
-	
 	protected void setColor(String input) {
 		color = input;
 	}
@@ -62,7 +52,7 @@ public class animal {
 	//toString method for printing results
 	@Override
 	public String toString() {
-		return "Species: " + species + " Color: " + color + " Number of legs: " + legs +
+		return " Color: " + color + " Number of legs: " + legs +
 				" Size: " + size;
 	}
 }

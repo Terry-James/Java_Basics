@@ -9,7 +9,7 @@ package inheritanceAndPolymorphismExamples;
  */
 
 //Extends animal class to gain access to its variables/traits
-public class bear extends animal{
+public class bear extends animal implements Edible{
 	private String age;
 	private String diet;
 	private String type;
@@ -20,7 +20,7 @@ public class bear extends animal{
 	
 	bear(String newAge, String newDiet, String newType, String newSpecies, String newColor,
 			int newLegs, String newSize){
-		super(newSpecies, newColor, newLegs, newSize); //calls animal constructor and passes variables
+		super(newColor, newLegs, newSize); //calls animal constructor and passes variables
 		this.age = newAge;
 		this.diet = newDiet;
 		this.type = newType;
@@ -55,6 +55,12 @@ public class bear extends animal{
 	@Override
 	public String toString() {
 		return "Age: " + age + " Diet: " + diet + " Type: " + type + " " + super.toString();
+	}
+
+	@Override
+	public String howToEat() {
+		// TODO Auto-generated method stub
+		return "can't eat";
 	}
 
 }

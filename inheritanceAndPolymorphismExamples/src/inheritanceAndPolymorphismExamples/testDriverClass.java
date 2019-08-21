@@ -5,16 +5,18 @@ package inheritanceAndPolymorphismExamples;
  * 
  * This class is part of an example to show how the three pillars of OOP work
  * Encapsulation, Inheritance, and Polymorphism
+ * Abstract class and Interface
  */
 
 public class testDriverClass {
 	public static void main(String[] args) {
-		//testing();
-		
-		bear smokey = new bear("adult", "berries or meat", "polar", "bear", "brown", 4, "large");
-		bear yogi = new bear("adult", "berries or meat", "polar", "bear", "brown", 4, "large");
-		checkObjectEquals(smokey, yogi);
-		checkObjectEquals(smokey, smokey);
+		testingClasses();
+//		testing();
+//		
+//		animal smokey = new bear("adult", "berries or meat", "polar", "bear", "brown", 4, "large");
+//		animal yogi = new bear("adult", "berries or meat", "polar", "bear", "brown", 4, "large");
+//		checkObjectEquals(smokey, yogi);
+//		checkObjectEquals(smokey, smokey);
 
 	}
 	
@@ -40,5 +42,16 @@ public class testDriverClass {
 		else {
 			System.out.println("The objects are not equal.");
 		}
+	}
+	
+	public static void testingClasses() {
+		bear thisAnimal = new bear();
+		
+		System.out.println("Bear age: " + thisAnimal.getColor());
+		thisAnimal.setColor("brown");
+		System.out.println("Bear age: " + thisAnimal.getColor());
+		System.out.println("Bear age: " + thisAnimal.howToEat());
+
+
 	}
 }
